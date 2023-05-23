@@ -15,7 +15,6 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit some common Elixir stuff
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 ELIXIR_BUILD_TYPE := OFFICIAL
-ELIXIR_MAINTAINER := OmarAlCoptan (Coptan)
 IS_PHONE := true
 TARGET_APERTURE_CAM := true
 TARGET_BOOT_ANIMATION_RES := 1080

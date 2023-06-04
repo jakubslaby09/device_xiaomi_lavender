@@ -10,7 +10,8 @@ $(call inherit-product, vendor/xiaomi/lavender/lavender-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosp
+    $(LOCAL_PATH)/overlay-aosp \
+    $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_PACKAGES += \
     NoCutoutOverlay \
@@ -22,7 +23,8 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/lineage/compat
 
 # Permissions
 PRODUCT_COPY_FILES += \
